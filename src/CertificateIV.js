@@ -19,7 +19,7 @@ const CertificateIV = () => {
   };
   return (
     <>
-    <div id='certificate' style={{display:'flex', width:'100%', justifyContent:'center',}}>
+    <div style={{display:'flex', width:'100%', justifyContent:'center', position:'absolute', zIndex:'1'}}>
       <div id="ResumeContainer" style={{border: '1px solid lightgrey', zIndex: '0'}}>
         <Document className={"PDFDocument"} width='200' file={testPdf} onLoadSuccess={onDocumentLoadSuccess}>
           {Array.from(new Array(numPages), (el, index) => (

@@ -80,7 +80,7 @@ const App = () => {
           margin:'40px',
           position: 'sticky',
           top:'0',
-          zIndex: '10'
+          zIndex:'10'
         }}
       >
         <div
@@ -95,17 +95,15 @@ const App = () => {
             margin:'40px',
           }}
         >
-         <a href='#codingCertificate'><div className='innerButton' onClick={handle1}>Coding Certificate</div></a> 
-         <a href='#certificate'><div onClick={handle2}>CertificateIV</div></a>
+        <div className='innerButton' onClick={handle1}>Coding Certificate</div>
+         <div onClick={handle2}>CertificateIV</div>
           <div onClick={handle3}>Bachelor Certificate</div>
           <div onClick={handle4}>Toga Letter of Recommendation</div>
           <div onClick={handle5}>Jet Services Letter of Recommendation</div>
         </div>
       </div>
-      <CertificateWBS/>
-      <CertificateIV/>
-      {/* {certificateIV && <CertificateIV id='codingCertificate'/>} */}
-      {/* {certificateWBS && <CertificateWBS id='codingCertificate'/> } */}
+      {certificateIV && <CertificateIV/>}
+      {certificateWBS && <CertificateWBS/> }
       {bachelor && <Bachelor /> }
       {toga && <Toga />}
       {arbeitszeugnis && <Arbeitszeugnis />}
