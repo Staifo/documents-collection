@@ -71,6 +71,8 @@ const App = () => {
 
 
   return (
+    <Switch>
+    <Route exact path="/">
     <div>
       <div
         style={{
@@ -98,12 +100,17 @@ const App = () => {
           <div onClick={handle5}>Jet Services Letter of Recommendation</div>
         </div>
         </div>
-      {certificateIV && <CertificateIV/>}
+      {/* {certificateIV && <CertificateIV/>}
       {certificateWBS && <CertificateWBS/> }
       {bachelor && <Bachelor /> }
       {toga && <Toga />}
-      {arbeitszeugnis && <Arbeitszeugnis />}
+      {arbeitszeugnis && <Arbeitszeugnis />} */}
     </div>
+    </Route>
+    <Route path='/certificatewbs'>
+    <CertificateWBS/>
+    </Route>
+    </Switch>
     
   );
 };
