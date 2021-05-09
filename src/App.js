@@ -102,7 +102,7 @@ const App = () => {
         </div>
       {certificateIV && <CertificateIV/>}
       {certificateWBS && <CertificateWBS/> }
-      {bachelor && <Bachelor /> }
+      {bachelor && <Bachelor/> }
       {toga && <Toga />}
       {arbeitszeugnis && <Arbeitszeugnis />}
     </div>
@@ -113,11 +113,11 @@ const App = () => {
     <Route path='/certificateiv'>
     <CertificateIV/>
     </Route>
-    <Route path='bachelor'>
-    <Bachelor /> 
+    <Route path='/bachelor'>
+    <Bachelor/> 
     </Route>
     <Route path='/jetrecommend'>
-    <Arbeitszeugnis />
+    <Arbeitszeugnis/>
     </Route>
     <Route path='/togarecommend'>
     <Toga />
