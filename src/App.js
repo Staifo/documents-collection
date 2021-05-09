@@ -100,15 +100,27 @@ const App = () => {
           <div onClick={handle5}>Jet Services Letter of Recommendation</div>
         </div>
         </div>
-      {/* {certificateIV && <CertificateIV/>}
+      {certificateIV && <CertificateIV/>}
       {certificateWBS && <CertificateWBS/> }
       {bachelor && <Bachelor /> }
       {toga && <Toga />}
-      {arbeitszeugnis && <Arbeitszeugnis />} */}
+      {arbeitszeugnis && <Arbeitszeugnis />}
     </div>
     </Route>
     <Route path='/certificatewbs'>
     <CertificateWBS/>
+    </Route>
+    <Route path='/certificateiv'>
+    <CertificateIV/>
+    </Route>
+    <Route path='bachelor'>
+    <Bachelor /> 
+    </Route>
+    <Route path='/jetrecommend'>
+    <Arbeitszeugnis />
+    </Route>
+    <Route path='/togarecommend'>
+    <Toga />
     </Route>
     </Switch>
     
