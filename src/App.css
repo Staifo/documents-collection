@@ -12,13 +12,14 @@
   font-family: Quicksand;
   letter-spacing: 6px;
   font-size: 26px;
+  background-color: white;
+  margin: 10px;
 }
 
 .buttons > div:hover {
   background-color: blue;
   color:white;
 }
-
 
 .innerButton {
   padding: 20px;

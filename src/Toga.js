@@ -23,7 +23,7 @@ const Toga = () => {
       <div id="ResumeContainer" style={{border: '1px solid lightgrey',}}>
         <Document className={"PDFDocument"} width='200' file={testPdf} onLoadSuccess={onDocumentLoadSuccess}>
           {Array.from(new Array(numPages), (el, index) => (
-            <Page className={"PDFPage PDFPageOne"} key={`page_${index + 1}`} pageNumber={index + 1} scale={2} />
+            <Page className={"PDFPage PDFPageOne"} key={`page_${index + 1}`} pageNumber={index + 1} scale={1.5} />
           ))}
         </Document>
       </div>

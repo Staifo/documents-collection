@@ -78,19 +78,15 @@ const App = () => {
           justifyContent: "center",
           height: "max-content",
           margin:'40px',
-          position: 'sticky',
-          top:'0',
-          zIndex:'10'
         }}
       >
         <div
-          className="buttons"
+          className='buttons'
           style={{
             width: "max-content",
             display: "flex",
             justifyContent: "center",
             flexDirection: "column",
-            border: "2px solid black",
             height: "100%",
             margin:'40px',
           }}
@@ -101,13 +97,14 @@ const App = () => {
           <div onClick={handle4}>Toga Letter of Recommendation</div>
           <div onClick={handle5}>Jet Services Letter of Recommendation</div>
         </div>
-      </div>
+        </div>
       {certificateIV && <CertificateIV/>}
       {certificateWBS && <CertificateWBS/> }
       {bachelor && <Bachelor /> }
       {toga && <Toga />}
       {arbeitszeugnis && <Arbeitszeugnis />}
     </div>
+    
   );
 };
 
